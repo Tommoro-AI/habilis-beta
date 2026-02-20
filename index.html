@@ -124,7 +124,7 @@
             <source src="./assets/videos/real_habilisbeta_dbcp.mp4" type="video/mp4">
           </video>
           <p class="has-text-centered teaser-caption">
-            1-hour continuous-run evaluation of Habilis-β on the dual-bin conveyor packing task
+            1-hour successful continuous operation of Habilis-β on the dual-bin conveyor packing task
           </p>
         </div>
       </div>
@@ -187,36 +187,13 @@
           <div class="column">
             <div class="content has-text-justified">
 
-              <!-- Introduction -->
-              <div class="fade-in-up">
-                <h2 class="title is-2 has-text-centered has-accent">Habilis-β</h2>
-                <p>
-                  Robotic systems often face challenges not in completing a task once, but in sustaining performance over repeated executions under real-world conditions.
-                  Long-term operation requires not only task success, but also speed and robustness over time.
-                </p>
-                <p>
-                  Habilis-β is developed with this perspective in mind.
-                  Rather than focusing solely on single-trial success rates under curated resets, the system is designed and evaluated for sustained autonomous operation.
-                  The objective is to support reliable, continuous task execution across extended deployment scenarios.
-                </p>
-              </div>
 
               <!-- Rethinking Evaluation -->
               <div class="fade-in-up" style="margin-top: 3rem;">
                 <h2 class="title is-2 has-text-centered has-accent">Rethinking Evaluation</h2>
-                <figure class="image-card" style="width: 40%; max-width: 800px; margin: 1.5rem auto;">
-                  <img src="./assets/images/prp.png" alt="PRP">
+                <figure style="width: 70%; max-width: 1000px; margin: 1.5rem auto;">
+                  <img src="./assets/images/prp_plane.svg" alt="PRP">
                 </figure>
-                <p>
-                  Most robot learning benchmarks measure single-trial success.
-                  But real deployment is continuous:
-                </p>
-                <ul>
-                  <li>Tasks repeat.</li>
-                  <li>Initial states drift.</li>
-                  <li>Small errors accumulate.</li>
-                  <li>Recovery becomes necessary.</li>
-                </ul>
                 <p>
                   We introduce a <b>continuous-run protocol</b>, where a robot operates for a fixed wall-clock duration without manual resets.
                   Performance is measured along two axes:
@@ -231,14 +208,25 @@
                 </p>
               </div>
 
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- System Overview -->
+    <section class="section section-gradient">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column">
+            <div class="content has-text-justified">
               <!-- System Overview -->
-              <div class="fade-in-up" style="margin-top: 3rem;">
+              <div class="fade-in-up">
                 <h2 class="title is-2 has-text-centered has-accent">System Overview</h2>
-                <figure class="image-card" style="width: 100%; margin: 1.5rem auto;">
-                  <img src="./assets/images/model_overview.png" alt="Habilis-β Model Overview">
+                <figure class="seamless-card" style="width: 100%; margin: 1.5rem auto;">
+                  <img src="./assets/images/system_overview.svg" alt="Habilis-β Model Overview">
                 </figure>
               </div>
-
             </div>
           </div>
         </div>
@@ -246,16 +234,16 @@
     </section>
 
     <!-- Simulation Performance -->
-    <section class="section">
+    <section class="section section-alt">
       <div class="container is-max-desktop">
         <div class="fade-in-up">
           <h2 class="title is-2 has-text-centered has-accent">Simulation Performance</h2>
 
           <!-- Simulation PRP -->
           <div class="columns is-centered">
-            <div class="column">
-              <figure class="image-card" style="width: 100%; max-width: 800px; margin: 1rem auto;">
-                <img src="./assets/images/sim_prp.png" alt="Simulation PRP">
+            <div class="column is-12">
+              <figure class="flat-figure" style="margin: 2.5rem auto 3rem;">
+                <img src="./assets/images/simulation_performance.svg" alt="Simulation Performance">
               </figure>
             </div>
           </div>
@@ -286,7 +274,7 @@
                       <source src="./assets/videos/sim_habilisbeta_w_espada_dbb.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/ ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β</h5>
                     </div>
                   </div>
                 </div>
@@ -296,7 +284,7 @@
                       <source src="./assets/videos/sim_habilisbeta_wo_espada_dbb.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/o ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β (w/o ESPADA)</h5>
                     </div>
                   </div>
                 </div>
@@ -322,7 +310,7 @@
                       <source src="./assets/videos/sim_habilisbeta_w_espada_pds.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/ ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β</h5>
                     </div>
                   </div>
                 </div>
@@ -332,7 +320,7 @@
                       <source src="./assets/videos/sim_habilisbeta_wo_espada_pds.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/o ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β (w/o ESPADA)</h5>
                     </div>
                   </div>
                 </div>
@@ -358,7 +346,7 @@
                       <source src="./assets/videos/sim_habilisbeta_w_espada_sbt.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/ ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β</h5>
                     </div>
                   </div>
                 </div>
@@ -368,7 +356,7 @@
                       <source src="./assets/videos/sim_habilisbeta_wo_espada_sbt.mp4" type="video/mp4">
                     </video>
                     <div class="video-card-body">
-                      <h5 class="title is-6 has-text-centered">Habilis-β (Ours) w/o ESPADA</h5>
+                      <h5 class="title is-6 has-text-centered">Habilis-β (w/o ESPADA)</h5>
                     </div>
                   </div>
                 </div>
@@ -390,23 +378,59 @@
     </section>
 
     <!-- Real-World Performance -->
-    <section class="section section-alt">
+    <section class="section">
       <div class="container is-max-desktop">
         <div class="fade-in-up">
           <h2 class="title is-2 has-text-centered has-accent">Real-World Performance</h2>
 
           <!-- Real-World PRP -->
           <div class="columns is-centered">
-            <div class="column">
-              <figure class="image-card" style="width: 100%; max-width: 800px; margin: 1rem auto;">
-                <img src="./assets/images/real_prp.png" alt="Real-World PRP">
+            <div class="column is-12">
+              <figure class="flat-figure" style="margin: 2rem auto;">
+                <img src="./assets/images/real_performance.svg" alt="Real-World Performance">
               </figure>
+            </div>
+          </div>
+
+          <!-- CFG Comparison -->
+          <div style="margin-top: 3rem;">
+            <h4 class="title is-4 has-text-centered">Habilis-β with Different CFG Values</h4>
+            <div class="columns is-multiline is-centered">
+              <div class="column is-6">
+                <div class="video-card">
+                  <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./assets/videos/real_habilisbeta_cfg0.8_dbcp.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-card-body">
+                    <h5 class="title is-6 has-text-centered">Habilis-β w/ CFG 0.8</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-6">
+                <div class="video-card">
+                  <video autoplay controls muted loop playsinline width="100%">
+                    <source src="./assets/videos/real_habilisbeta_cfg1.5_dbcp.mp4" type="video/mp4">
+                  </video>
+                  <div class="video-card-body">
+                    <h5 class="title is-6 has-text-centered">Habilis-β w/ CFG 1.5</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-12">
+                <div class="caption-card" style="text-align: left;">
+      
+                  <ul style="margin-top: 0; margin-bottom: 0; padding-left: 1.4rem; list-style: disc;">
+                    <li><b>Lower guidance (CFG < 1.0):</b> Prioritizes learned interaction priors, yielding smoother motion and improved stability.</li>
+                    <li><b>Higher guidance (CFG > 1.0):</b> Strengthens instruction adherence, increasing task speed and aggressiveness. </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Baseline Failure Cases -->
           <div style="margin-top: 2rem;">
-            <h4 class="title is-4 has-text-centered">Baseline Failure Cases</h4>
+            <h4 class="title is-4 has-text-centered">Baseline (π<sub>0.5</sub>) Failure Cases</h4>
             <div class="columns is-multiline is-centered">
               <div class="column is-6">
                 <div class="video-card">
@@ -449,52 +473,6 @@
                 </div>
               </div>
             </div>
-            <div class="column is-12" style="margin-top: 0.5rem;">
-              <div class="caption-card">
-                These clips illustrate common long-horizon failures that are underrepresented in single-trial evaluation.<br>
-                <b>(1) Over-grasping:</b> accumulating multiple objects increases downstream clutter and destabilizes placement.<br>
-                <b>(2) Recovery failure:</b> after a partial error, the policy cannot re-enter a valid state without external help.<br>
-                <b>(3) Success-then-stuck:</b> the task completes but the robot fails to transition cleanly to the next cycle, causing deadlock.<br>
-                <b>(4) Timeout:</b> conservative or oscillatory behavior fails to finish within the cycle time limit, triggering an intervention.<br>
-                These failure types directly reduce MTBI even when single-episode success appears reasonable.
-              </div>
-            </div>
-          </div>
-
-          <!-- CFG Comparison -->
-          <div style="margin-top: 3rem;">
-            <h4 class="title is-4 has-text-centered">Habilis-β with Different CFG Values</h4>
-            <div class="columns is-multiline is-centered">
-              <div class="column is-6">
-                <div class="video-card">
-                  <video autoplay controls muted loop playsinline width="100%">
-                    <source src="./assets/videos/real_habilisbeta_cfg0.8_dbcp.mp4" type="video/mp4">
-                  </video>
-                  <div class="video-card-body">
-                    <h5 class="title is-6 has-text-centered">Habilis-β w/ CFG 0.8</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-6">
-                <div class="video-card">
-                  <video autoplay controls muted loop playsinline width="100%">
-                    <source src="./assets/videos/real_habilisbeta_cfg1.5_dbcp.mp4" type="video/mp4">
-                  </video>
-                  <div class="video-card-body">
-                    <h5 class="title is-6 has-text-centered">Habilis-β w/ CFG 1.5</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="column is-12">
-                <div class="caption-card" style="text-align: left;">
-                  We vary the guidance weight while keeping the policy and environment fixed.
-                  <ul style="margin-top: 0; margin-bottom: 0; padding-left: 1.4rem; list-style: disc;">
-                    <li>Lower guidance (e.g., CFG=0.8) places more weight on the learned interaction prior, often yielding smoother, more conservative motion that can improve stability in contact-rich phases.</li>
-                    <li>Higher guidance (e.g., CFG=1.5) strengthens instruction-conditioned behavior, which can increase task-directed aggressiveness and speed but may reduce robustness under drift.</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -514,7 +492,7 @@
                 <span>Copy</span>
               </button>
               <pre><code id="bibtex-code">@article{tr2026habilisbeta,
-  author  = {{Tommoro Robotics}},
+  author  = {Jesoon Kang and Taegeon Park and Jisu An and Soo Min Kimm and Jaejoon Kim and Jinu Pahk and Byungju Kim and Junseok Lee and Namheon Baek and Sungwan Ha and Hojun Baek and Eduardo Ayerve Cruz and Wontae Kim and Junghyeon Choi and Yousuk Lee and Joonmo Han and Sunghyun Cho and Sunghyun Kwon and Soyoung Lee and Jun Ki Lee and Seung-Joon Yi and Byoung-Tak Zhang and Theo Taeyeong Kim},
   title   = {{Habilis-$\beta$: A Fast-Motion and Long-Lasting On-Device Vision-Language-Action Model}},
   year    = {2026},
 }</code></pre>
