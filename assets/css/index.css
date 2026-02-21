@@ -460,6 +460,7 @@ figcaption {
 }
 
 /* ===== PRP Figure ===== */
+.content .prp-figure,
 .prp-figure {
   width: 70%;
   max-width: 1000px;
@@ -491,6 +492,10 @@ html, body {
 
 /* ===== Responsive: Tablet & Below (max 768px) ===== */
 @media screen and (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+  }
+
   .hero.is-primary-gradient .publication-title {
     font-size: 1.5rem;
     line-height: 1.35;
@@ -523,18 +528,34 @@ html, body {
     font-size: 1.1rem;
   }
 
+  .content .prp-figure,
   .prp-figure {
     width: 100%;
     margin: 1rem auto;
   }
 
-  .tabs.is-pill li a {
-    padding: 0.5em 1.2em;
-    font-size: 0.82rem;
+  .tabs.is-pill {
+    overflow: hidden !important;
+    max-width: 100%;
+    box-sizing: border-box;
   }
 
   .tabs.is-pill ul {
+    width: 100%;
+    flex-shrink: 1;
     gap: 0.4rem;
+  }
+
+  .tabs.is-pill li a {
+    padding: 0.5em 1.2em;
+    font-size: 0.82rem;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .flat-figure,
+  .flat-figure img {
+    max-width: 100%;
   }
 
   .video-card .video-card-body {
