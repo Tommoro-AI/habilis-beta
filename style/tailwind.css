@@ -1,0 +1,53 @@
+@import "tailwindcss";
+@source "../src";
+
+@theme {
+  --color-cyan: #00feff;
+  --color-cyan-dark: #00c8d4;
+  --color-cyan-glow: rgba(0, 254, 255, 0.25);
+  --color-cyan-glow-strong: rgba(0, 254, 255, 0.45);
+
+  --color-dark: #0b1120;
+  --color-dark-mid: #131b2e;
+  --color-dark-deep: #0d2137;
+
+  --color-gray-50: #f5f7fa;
+  --color-gray-100: #eaedf2;
+  --color-gray-300: #ced4da;
+  --color-gray-500: #6c757d;
+  --color-gray-800: #2d3748;
+  --color-gray-900: #1a202c;
+
+  --color-text: #2d3748;
+  --color-text-light: #5a6577;
+
+  --font-sans: "Noto Sans", sans-serif;
+  --font-display: "Google Sans", sans-serif;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.06);
+  --shadow-card-hover: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-teaser: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --shadow-seamless: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
+  --shadow-seamless-hover: 0 25px 50px -5px rgba(0, 0, 0, 0.15);
+  --shadow-pill-active: 0 8px 20px rgba(11, 17, 32, 0.25);
+  --shadow-cyan-glow: 0 0 40px rgba(0, 254, 255, 0.25);
+  --shadow-cyan-hover: 0 4px 20px rgba(0, 254, 255, 0.45);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
