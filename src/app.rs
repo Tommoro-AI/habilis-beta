@@ -21,7 +21,7 @@ pub fn shell(options: LeptosOptions) -> impl IntoView {
 
                 <link rel="icon" href="/favicon.png" />
                 <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
 
                 <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
